@@ -1,0 +1,43 @@
+FTP pass: SxuC2OdC
+
+db_user: deb44000n2_app
+db_pass: c1i6TqpKd8
+
+SELECT x.field_first_name_value as 'firstname', y.field_last_name_value as 'lastname', e.field_email_value as 'email', g.field_gsm_value as 'mobile', p.field_phone_value as 'phone'
+FROM `field_data_field_first_name` as x
+JOIN `field_data_field_last_name` as y ON x.entity_id = y.entity_id
+JOIN `field_data_field_email` as e ON x.entity_id = e.entity_id
+JOIN `field_data_field_gsm` as g ON x.entity_id = g.entity_id
+JOIN `field_data_field_phone` as p ON x.entity_id = p.entity_id
+
+SELECT x.field_first_name_value as 'firstname', y.field_last_name_value as 'lastname', e.field_email_value as 'email', null as 'address', null as 'postalcode', null as 'city', p.field_phone_value as 'phone', g.field_gsm_value as 'mobile', null as 'note', null as 'sale', null as 'sample'
+FROM `field_data_field_first_name` as x
+JOIN `field_data_field_last_name` as y ON x.entity_id = y.entity_id
+JOIN `field_data_field_email` as e ON x.entity_id = e.entity_id
+JOIN `field_data_field_gsm` as g ON x.entity_id = g.entity_id
+JOIN `field_data_field_phone` as p ON x.entity_id = p.entity_id
+
+SELECT null as 'id', x.field_first_name_value as 'firstname', y.field_last_name_value as 'lastname', e.field_email_value as 'email', null as 'address', null as 'postalcode', null as 'city', p.field_phone_value as 'phone', g.field_gsm_value as 'mobile', null as 'note', null as 'sale', null as 'sample', null as 'created_at', null as 'updated_at', null as 'deleted_at' FROM `field_data_field_first_name` as x JOIN `field_data_field_last_name` as y ON x.entity_id = y.entity_id JOIN `field_data_field_email` as e ON x.entity_id = e.entity_id JOIN `field_data_field_gsm` as g ON x.entity_id = g.entity_id JOIN `field_data_field_phone` as p ON x.entity_id = p.entity_id
+
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCdVIZferMtDWxnKtkP+dKv4pvjKuWDJuCLeixetJPQ3ZQDvDpiVFrFENNUqSbltP+RdN3Vrm0DChMrRjwGNZ98rGwDcBughJ+T6aTFcMhbjvlzsE+6nrKA58LG1Wy/LEdmv1rEoi4Sl1Ael3NElNL+NlVBzbBEfdIW1evEsFIHfxQ+Bf7lB8GAyLTpD+kXgh1ZNvNa6UEI1WTGv7ucjXE0AjIkRmG7MZQvR+jOd8kWzy0EdZ46w31/9bAQpiCpP9sZF8FO7VdOgSDwOXBMw6q0aYEvT2RE6RL/WWyVwlNDXJygIdMvhX0b49VqcAe0lxB5Q7K3aiVaCqRAqMEvIk1n rsa-key-AntagonistSSH
+
+SELECT null as 'id',
+       x.field_first_name_value as 'firstname',
+       y.field_last_name_value as 'lastname',
+       e.field_email_value as 'email',
+       null as 'address',
+       null as 'postalcode',
+       null as 'city',
+       p.field_phone_value as 'phone',
+       g.field_gsm_value as 'mobile',
+       null as 'note',
+       null as 'sale',
+       null as 'sample',
+       null as 'created_at',
+       null as 'updated_at',
+       null as 'deleted_at'
+FROM `field_data_field_first_name` as x
+JOIN `field_data_field_last_name` as y ON x.entity_id = y.entity_id
+LEFT JOIN `field_data_field_gsm` as g ON x.entity_id = g.entity_id
+LEFT JOIN `field_data_field_phone` as p ON x.entity_id = p.entity_id
+LEFT JOIN `field_data_field_email` as e ON x.entity_id = e.entity_id

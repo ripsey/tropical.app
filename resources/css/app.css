@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.mytabs {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.mytabs input[type="radio"] {
+    display: none;
+}
+.mytabs label {
+    padding: 10px;
+    background: #e2e2e2;
+    cursor: pointer;
+}
+
+.mytabs .tab {
+    width: 100%;
+    padding: 20px;
+    background: #fff;
+    order: 1;
+    display: none;
+}
+
+.mytabs input[type="radio"]:checked + label + .tab {
+    display: block;
+}
+
+.mytabs input[type="radio"]:checked + label {
+    background: #fff;
+}
+
+.generator-button:hover {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.created {
+    color: #d81e5d;
+    font-size: inherit;
+    font-weight: 700;
+    background: linear-gradient(to bottom right, #f7ff1e, #3a9d31);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.4s ease-out;
+}
+
+.created:hover {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}

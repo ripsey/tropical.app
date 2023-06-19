@@ -1,0 +1,10 @@
+Username:	services@saunatropical.be
+Password:	HBo9hpZ7j
+IMAP server:	mail.antagonist.nl
+SMTP server:	mail.antagonist.nl
+
+$2y$10$47pd78ckBWodZDh2qVEf1epysE7mPJLQu1h9m5HjfMW4GBcf16cz2
+$2y$10$H1Zcr8Uon5tzk4xoNx.W.uuZj.syL/UDs3Itr0zojBSgAtSfQzvoO = raadhetmaar
+
+info@schoonheidssalon-tropical.be
+$2y$10$ELglFrWdCrPHwsgPNm1PO.lRXugwsB7h.hNY2adadNig.Hm8qlXjS
